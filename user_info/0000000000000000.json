@@ -1,0 +1,23 @@
+{
+	"_comment":" This is an example file for how Parrot RPG will handle users. ",
+	"user_info": {
+		"health":"100",
+		"exp":"0",
+		"pc":"100",
+		"home_server":"394828858743980032"
+	},
+	"inventory":{
+		"slot1":"",
+		"slot2":"",
+		"slot3":"",
+		"slot4":"",
+		"slot5":"",
+		"slot6":"",
+		"slot7":"",
+		"slot8":"",
+		"slot9":"",
+		"slot10":"",
+		"slot11":"",
+		"slot12":""
+	}
+}

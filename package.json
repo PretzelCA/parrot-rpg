@@ -1,0 +1,28 @@
+{
+  "name": "parrot-rpg",
+  "version": "1.0.0",
+  "description": "A Discord RPG based on Party Parrots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PretzelCA/parrot-rpg.git"
+  },
+  "keywords": [
+    "Parrot",
+    "Party",
+    "Discord",
+    "Bot"
+  ],
+  "author": "PretzelCA <Kai Viau> (kaiviau1@gmail.com)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PretzelCA/parrot-rpg/issues"
+  },
+  "homepage": "https://github.com/PretzelCA/parrot-rpg#readme",
+  "dependencies": {
+    "eris": "^0.8.5"
+  }
+}
