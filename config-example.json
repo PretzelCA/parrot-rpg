@@ -2,5 +2,6 @@
 	"token":"",
 	"owner_id":"",
 	"home_server":"",
-	"home_channel":""
+	"home_channel":"",
+	"prefix":"p!"
 }

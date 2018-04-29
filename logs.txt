@@ -1,0 +1,4 @@
+[April 28th 2018, 2:55:14 am] TypeError: moduleHolder[actualCommand[0]] is not a function
+[April 28th 2018, 2:56:46 am] TypeError: moduleHolder[actualCommand[0]] is not a function
+[April 28th 2018, 2:58:37 am] TypeError: moduleHolder[actualCommand[0]] is not a function
+[April 28th 2018, 2:59:19 am] TypeError: moduleHolder[actualCommand[0]] is not a function

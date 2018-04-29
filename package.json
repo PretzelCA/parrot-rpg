@@ -4,7 +4,9 @@
   "description": "A Discord RPG based on Party Parrots",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard",
+    "test-fix": "standard --fix",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,10 @@
   },
   "homepage": "https://github.com/PretzelCA/parrot-rpg#readme",
   "dependencies": {
-    "eris": "^0.8.5"
+    "eris": "^0.8.5",
+    "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
   }
 }
