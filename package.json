@@ -26,6 +26,7 @@
   "homepage": "https://github.com/PretzelCA/parrot-rpg#readme",
   "dependencies": {
     "eris": "^0.8.5",
+    "jsonfile": "^4.0.0",
     "moment": "^2.22.1"
   },
   "devDependencies": {
