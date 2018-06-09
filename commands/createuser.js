@@ -1,7 +1,6 @@
 const packageJSON = require('../package.json')
 const config = require('../config.json')
 const jsonfile = require('jsonfile')
-const fs = require('fs')
 
 function handler (bot, msg, args) {
   bot.createMessage(msg.channel.id, {
@@ -18,7 +17,7 @@ function handler (bot, msg, args) {
       }
     }
   })
-  var obj = {"user_info":{"health":"100","exp":"0","pc":"100","home_server":"" + msg.channel.guild.id + ""}, "inventory":{"slot1":"","slot2":"","slot3":"","slot4":"","slot5":"","slot6":"","slot7":"","slot8":"","slot9":"","slot10":"","slot11":"","slot12":""}}
+  var obj = {"user_info":{"health":"100","exp":"0","pc":"100","home_server":"" + msg.channel.guild.id + ""}, "battles":{"battlesWon":"0","battlesLost":"0"}, "inventory":{"slot1":"","slot2":"","slot3":"","slot4":"","slot5":"","slot6":"","slot7":"","slot8":"","slot9":"","slot10":"","slot11":"","slot12":""}}
   jsonfile.writeFile('./user_info/' + msg.author.id + '.usr_sav', obj, function (err) {
     console.error(err)
   })

@@ -60,3 +60,5 @@ typings/
 # parrot-rpg files
 config.json
 *.usr_sav
+logs.txt
+logs.txt

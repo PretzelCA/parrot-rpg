@@ -6,6 +6,10 @@
 		"pc":"100",
 		"home_server":"394828858743980032"
 	},
+	"battles": {
+		"battlesWon":"0",
+		"battlesLost":"0"
+	},
 	"inventory":{
 		"slot1":"",
 		"slot2":"",
