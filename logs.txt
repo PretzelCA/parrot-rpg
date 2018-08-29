@@ -3,3 +3,5 @@
 [April 28th 2018, 2:58:37 am] TypeError: moduleHolder[actualCommand[0]] is not a function
 [April 28th 2018, 2:59:19 am] TypeError: moduleHolder[actualCommand[0]] is not a function
 [June 9th 2018, 3:44:16 pm] ReferenceError: file is not defined
+[August 29th 2018, 6:56:27 pm] TypeError: moduleHolder[actualCommand[0]] is not a function
+[August 29th 2018, 7:28:48 pm] TypeError: moduleHolder[actualCommand[0]] is not a function

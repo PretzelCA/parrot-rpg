@@ -17,7 +17,7 @@ function handler (bot, msg, args) {
       }
     }
   })
-  var obj = {"user_info":{"health":"100","exp":"0","pc":"100","home_server":"" + msg.channel.guild.id + ""}, "battles":{"battlesWon":"0","battlesLost":"0"}, "inventory":{"slot1":"","slot2":"","slot3":"","slot4":"","slot5":"","slot6":"","slot7":"","slot8":"","slot9":"","slot10":"","slot11":"","slot12":""}}
+  var obj = {'user_info': {'health': '100', 'exp': '0', 'pc': '100', 'home_server': '' + msg.channel.guild.id + ''}, 'battles': {'battlesWon': '0', 'battlesLost': '0'}, 'inventory': {'slot1': '0', 'slot2': '0', 'slot3': '0', 'slot4': '0', 'slot5': '0', 'slot6': '0', 'slot7': '0', 'slot8': '0', 'slot9': '0', 'slot10': '0', 'slot11': '0', 'slot12': '0'}, 'parrots': {'slot1': '0', 'slot2': '0', 'slot3': '0', 'slot4': '0', 'slot5': '0', 'slot6': '0', 'slot7': '0', 'slot8': '0', 'slot9': '0', 'slot10': '0', 'slot11': '0', 'slot12': '0'}}
   jsonfile.writeFile('./user_info/' + msg.author.id + '.usr_sav', obj, function (err) {
     console.error(err)
   })

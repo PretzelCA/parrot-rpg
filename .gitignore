@@ -62,3 +62,4 @@ config.json
 *.usr_sav
 logs.txt
 logs.txt
+.idea/dictionaries/Skye.xml
