@@ -7,11 +7,11 @@ const talkedRecently = new Set();
 
 
 function handler (bot, msg, args) {
-  if (talkedRecently.has(msg.author.id))
+  if (talkedRecently.has(msg.author.id)) {
     bot.createMessage(msg.channel.id, {
       embed: {
         title: 'Parrot RPG - Cooldown',
-        description: 'Hey ' + msg.author.username  +', please wait 30 seconds every catch command!',
+        description: 'Hey ' + msg.author.username + ', please wait 30 seconds every catch command!',
         author: {
           name: bot.user.username,
           icon_url: bot.user.avatarURL
@@ -22,7 +22,9 @@ function handler (bot, msg, args) {
         }
       }
     })
-    return;
+  return
+  }
+
 
   var saveFile = './user_info/' + msg.author.id + '.usr_sav'
   jsonfile.readFile(saveFile, function (err, obj) {
