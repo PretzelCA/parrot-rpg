@@ -3,6 +3,7 @@ const fs = require('fs')
 const jsonfile = require('jsonfile')
 const Chance = require('chance')
 const talkedRecently = new Set()
+const logger = require('../logger.js')
 
 chance = new Chance()
 
@@ -27,7 +28,7 @@ function handler (bot, msg, args) {
 
   var saveFile = './user_info/' + msg.author.id + '.usr_sav'
   jsonfile.readFile(saveFile, function (err, obj) {
-    if (err) return console.log(err)
+    if (err) return logger.loggerCustom(err, "err")
     var maybeThisWillWork = chance.d20()
     if (maybeThisWillWork > 5) {
       if (maybeThisWillWork > 5 && maybeThisWillWork < 12) {
@@ -38,9 +39,9 @@ function handler (bot, msg, args) {
           return
         }
         fs.writeFile(saveFile, JSON.stringify(obj, null), function (err) {
-          if (err) return console.log(err)
-          console.log(JSON.stringify(obj))
-          console.log('writing to ' + saveFile)
+          if (err) return logger.loggerCustom(err, "err")
+          logger.loggerCustom(JSON.stringify(obj), "f")
+          logger.loggerCustom('writing to ' + saveFile, "msg")
         })
       } else if (maybeThisWillWork > 11 && maybeThisWillWork < 15) {
         var parrot = 'n Explody Parrot <a:explodyparrot:405281379366993922>'
@@ -50,9 +51,9 @@ function handler (bot, msg, args) {
           return
         }
         fs.writeFile(saveFile, JSON.stringify(obj, null), function (err) {
-          if (err) return console.log(err)
-          console.log(JSON.stringify(obj))
-          console.log('writing to ' + saveFile)
+          if (err) return logger.loggerCustom(err, "err")
+          logger.loggerCustom(JSON.stringify(obj), "f")
+          logger.loggerCustom('writing to ' + saveFile, "msg")
         })
       } else if (maybeThisWillWork > 14 && maybeThisWillWork < 17) {
         var parrot = ' Parrot Cop <a:parrotcop:405281379069460480>'
@@ -62,9 +63,9 @@ function handler (bot, msg, args) {
           return
         }
         fs.writeFile(saveFile, JSON.stringify(obj, null), function (err) {
-          if (err) return console.log(err)
-          console.log(JSON.stringify(obj))
-          console.log('writing to ' + saveFile)
+          if (err) return logger.loggerCustom(err, "err")
+          logger.loggerCustom(JSON.stringify(obj), "f")
+          logger.loggerCustom('writing to ' + saveFile, "msg")
         })
       } else if (maybeThisWillWork > 16 && maybeThisWillWork < 20) {
         var parrot = 'n Angry Parrot <a:angryparrot:405281384798879754>'
@@ -74,9 +75,9 @@ function handler (bot, msg, args) {
           return
         }
         fs.writeFile(saveFile, JSON.stringify(obj, null), function (err) {
-          if (err) return console.log(err)
-          console.log(JSON.stringify(obj))
-          console.log('writing to ' + saveFile)
+          if (err) return logger.loggerCustom(err, "err")
+          logger.loggerCustom(JSON.stringify(obj), "f")
+          logger.loggerCustom('writing to ' + saveFile, "msg")
         })
       } else if (maybeThisWillWork > 19) {
         var parrot = ' Rotating Parrot <a:rotatingparrot:405281387474714624>'
@@ -86,12 +87,12 @@ function handler (bot, msg, args) {
           return
         }
         fs.writeFile(saveFile, JSON.stringify(obj, null), function (err) {
-          if (err) return console.log(err)
-          console.log(JSON.stringify(obj))
-          console.log('writing to ' + saveFile)
+          if (err) return logger.loggerCustom(err, "err")
+          logger.loggerCustom(JSON.stringify(obj), "f")
+          logger.loggerCustom('writing to ' + saveFile, "msg")
         })
       }
-      console.log(maybeThisWillWork)
+      logger.loggerCustom(maybeThisWillWork, "f")
       bot.createMessage(msg.channel.id, {
         embed: {
           title: 'Parrot RPG - Catch',

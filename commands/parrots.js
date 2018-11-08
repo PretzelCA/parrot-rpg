@@ -1,5 +1,6 @@
 const packageJSON = require('../package.json')
 const jsonfile = require('jsonfile')
+const logger = require('../logger.js')
 
 function handler (bot, msg, args) {
   jsonfile.readFile('./user_info/' + msg.author.id + '.usr_sav', function (err, obj) {
@@ -39,7 +40,7 @@ function handler (bot, msg, args) {
         }
       }
     })
-    if (err) return console.log(err)
+    if (err) return logger.loggerCustom(err, "err")
   })
 }
 

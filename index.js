@@ -2,8 +2,7 @@ const Eris = require('eris')
 const packageJSON = require('./package.json')
 const fs = require('fs')
 const pathModule = require('path')
-const moment = require('moment')
-const os = require('os')
+const logger = require('./logger.js')
 
 // Manage unhandled exceptions as early as possible
 process.on('uncaughtException', (e) => {
@@ -16,13 +15,13 @@ var commands = []
 function LoadModules (path) {
   fs.lstat(path, function (err, stat) {
     if (err) {
-      return loggerCustom(err)
+      return logger.loggerCustom(err, "err")
     }
     if (stat.isDirectory()) {
       // we have a directory: do a tree walk
       fs.readdir(path, function (err, files) {
         if (err) {
-          return loggerCustom(err)
+          return logger.loggerCustom(err, "err")
         }
         var f = files.length
         var l = files.length
@@ -38,7 +37,12 @@ function LoadModules (path) {
       })
     } else {
       // we have a file: load it
-      require(path)(moduleHolder)
+      try {
+        require(path)(moduleHolder)
+      }
+      catch(err) {
+        logger.loggerCustom(err, "err")
+      }
     }
   })
 }
@@ -73,25 +77,17 @@ bot.on('messageCreate', (msg) => {
       try {
         moduleHolder[actualCommand[0]](bot, msg, args)
       } catch (err) {
-        loggerCustom(err)
+        logger.loggerCustom(err, "err")
       }
     }
   }
 })
 
-// Simple logger that writes to a file and displays in console window
-
-function loggerCustom (message) {
-  var time = '[' + moment().format('MMMM Do YYYY, h:mm:ss a')
-  var finalMessage = time + '] ' + message + os.EOL
-  console.log(finalMessage)
-  fs.appendFile('./logs.txt', finalMessage, function (err) {
-    if (err) {
-      // Very high quality error catch here
-      return loggerCustom(err)
-    }
-  })
-}
-
 bot.connect()
-console.log('Welcome to Parrot RPG, Version ' + rpgVersion)
+logger.loggerCustom('Welcome to Parrot RPG, Version ' + rpgVersion, "f")
+try {
+  bot.editStatus("Use "+prefix+"commands for commands.")
+} 
+catch(err) {
+  logger.loggerCustom(err, "f")
+}

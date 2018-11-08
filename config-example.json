@@ -3,5 +3,6 @@
 	"owner_id":"",
 	"home_server":"",
 	"home_channel":"",
-	"prefix":"p!"
+	"prefix":"p!",
+	"dsn":""
 }

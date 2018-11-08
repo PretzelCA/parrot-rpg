@@ -1,9 +1,10 @@
 const packageJSON = require('../package.json')
 const jsonfile = require('jsonfile')
+const logger = require('../logger.js')
 
 function handler (bot, msg, args) {
   jsonfile.readFile('./user_info/' + msg.author.id + '.usr_sav', function (err, obj) {
-    if (err) return console.log(err)
+    if (err) return logger.loggerCustom(err)
     bot.createMessage(msg.channel.id, {
       embed: {
         title: 'Parrot RPG - User Stats',

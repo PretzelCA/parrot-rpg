@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/PretzelCA/parrot-rpg#readme",
   "dependencies": {
+    "@sentry/node": "4.3.0",
     "chance": "^1.0.16",
     "eris": "^0.8.5",
     "jsonfile": "^4.0.0",
