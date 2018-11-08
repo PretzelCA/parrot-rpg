@@ -1,7 +1,6 @@
 # Parrot RPG
-----
 ## Text based Discord RPG about Parrots
-
+----
 ### Developing
 There's a couple of things you should probably know before working on Parrot RPG:
 
