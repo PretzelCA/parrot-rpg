@@ -1,0 +1,83 @@
+{
+	"medic": {
+		"revive": {
+			"name": "Revive Seed",
+			"description": "Use this on your fallen brethren to revive them.",
+			"price": "50",
+			"emoji": ""
+		},
+		"small-heal": {
+			"name": "Small Healing Seed",
+			"description": "Heals your parrots a whopping 15 hit points!",
+			"price": "10",
+			"emoji": ""
+		},
+		"large-heal": {
+			"name": "Large Healing Seed",
+			"description": "Heals your parrots 40 by 40 hit points! And gives them a nice after battle snack :D",
+			"price": "20",
+			"emoji": ""
+		},
+		"mega-heal": {
+			"name": "Mega Healing Seed",
+			"description": "Heals your parrots by 100 hit points! In the world of liquor this is top shelf quality.",
+			"price": "40",
+			"emoji": ""
+		}
+	},
+	"functional": {
+		"larger-battle-team": {
+			"name": "Put your bag through SCP-914 and get an extra pocket. Approved by Pockets the Rogue.",
+			"description": "",
+			"price": "35",
+			"emoji": ""
+		},
+		"upgrade-parrot": {
+			"name": "Upgrade A Parrot",
+			"description": "Put a parrot through SCP-914 on fine and get a better parrot! SCP-914 rolls a d20 to upgrade.",
+			"price": "20",
+			"emoji": ""
+		},
+		"upgrade-all-battle-parrots": {
+			"Name": "Upgrade All Parrots",
+			"description": "Shove your entire bag of parrots into SCP-914 slap the dial to FINE and turn that key like a car ignition. Get an entire team of upgraded parrots.",
+			"price": "120",
+			"emoji": ""
+		}
+	},
+	"buffs": {
+		"attack-buff": {
+			"name": "Attack Buff Seed",
+			"description": "Puts your parrot into a drug induced rage.",
+			"price": "30",
+			"emoji": ""
+
+		},
+		"defense buff": {
+			"name": "Defense Buff Seed",
+			"description": "Literally just edbile steroids.",
+			"price": "30",
+			"emoji": ""
+		},
+		"large-attack-buff": {
+			"name": "Large Attack Buff Seed",
+			"description": "Give your parrot this seed if you want him to literally eat Amin.",
+			"price": "60",
+			"emoji": ""
+		},
+		"large-defence-buff": {
+			"name": "Large Defence Buff Seed",
+			"description": "Turns your parrot into Dwayne The Rock Johnson.",
+			"price": "60",
+			"emoji": ""
+		}
+	},
+	"easter-eggs": {
+		"mysterious-seed": {
+			"name": "Mysterious Seed",
+			"description": "Mysteriosuly Mysterious...",
+			"price": "",
+			"emoji": ""
+		}
+	}
+}

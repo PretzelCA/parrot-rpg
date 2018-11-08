@@ -96,7 +96,7 @@ function handler (bot, msg, args) {
       bot.createMessage(msg.channel.id, {
         embed: {
           title: 'Parrot RPG - Catch',
-          description: 'You threw seed onto the ground and you caught a' + parrot,
+          description: msg.author.username + ', You threw seed onto the ground and you caught a' + parrot,
           author: {
             name: bot.user.username,
             icon_url: bot.user.avatarURL
@@ -111,7 +111,7 @@ function handler (bot, msg, args) {
       bot.createMessage(msg.channel.id, {
         embed: {
           title: 'Parrot RPG - Catch',
-          description: 'You threw seed onto the ground and nothing happened. <a:sadparrot:405281388212781066>',
+          description: msg.author.username + ', You threw seed onto the ground and nothing happened. <a:sadparrot:405281388212781066>',
           author: {
             name: bot.user.username,
             icon_url: bot.user.avatarURL

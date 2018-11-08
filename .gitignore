@@ -64,3 +64,4 @@ config.json
 logs.txt
 logs.txt
 .idea/dictionaries/Skye.xml
+package-lock.json

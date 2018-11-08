@@ -9,6 +9,15 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\index.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program without node on PATH",
+            "NODE_PATH": "C:\\lul\\node-v11.1.0-win-x64\\node.exe",
+            "env":{
+                "program": "${workspaceFolder}\\index.js"
+            }   
         }
     ]
 }
