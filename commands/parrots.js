@@ -40,7 +40,7 @@ function handler (bot, msg, args) {
         }
       }
     })
-    if (err) return logger.loggerCustom(err, "err")
+    if (err) return logger.loggerCustom(err, 'err')
   })
 }
 
