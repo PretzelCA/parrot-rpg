@@ -37,5 +37,37 @@
 		"slot10":"",
 		"slot11":"",
 		"slot12":""
+	},
+	"battleTeam":{
+		"slot1":{
+			"type":"",
+			"hp":"",
+			"name":""
+		},
+		"slot2":{
+			"type":"",
+			"hp":"",
+			"name":""
+		},
+		"slot3":{
+			"type":"",
+			"hp":"",
+			"name":""
+		},
+		"slot4":{
+			"type":"",
+			"hp":"",
+			"name":""
+		},
+		"slot5":{
+			"type":"",
+			"hp":"",
+			"name":""
+		},
+		"slot6":{
+			"type":"",
+			"hp":"",
+			"name":""
+		}
 	}
 }
