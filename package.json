@@ -31,6 +31,6 @@
     "moment": "^2.22.1"
   },
   "devDependencies": {
-    "standard": "^11.0.1"
+    "standard": "^12.0.1"
   }
 }
