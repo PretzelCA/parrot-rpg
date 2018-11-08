@@ -52,7 +52,6 @@ exports.moduleHolder = moduleHolder
 var config = require('./config.json')
 
 var bot = new Eris(config.token)
-var ownerID = config.ownerID
 var prefix = config.prefix
 var rpgVersion = packageJSON.version
 

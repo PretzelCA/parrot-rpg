@@ -3,6 +3,7 @@ const jsonfile = require('jsonfile')
 
 function handler (bot, msg, args) {
   jsonfile.readFile('./user_info/' + msg.author.id + '.usr_sav', function (err, obj) {
+    if (err) return console.log(err)
     bot.createMessage(msg.channel.id, {
       embed: {
         title: 'Parrot RPG - User Stats',

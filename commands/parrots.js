@@ -39,6 +39,7 @@ function handler (bot, msg, args) {
         }
       }
     })
+    if (err) return console.log(err)
   })
 }
 
