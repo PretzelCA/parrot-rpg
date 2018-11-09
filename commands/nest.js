@@ -6,7 +6,7 @@ function handler (bot, msg, args) {
   jsonfile.readFile('./user_info/' + msg.author.id + '.usr_sav', function (err, obj) {
     bot.createMessage(msg.channel.id, {
       embed: {
-        title: 'Parrot RPG - Parrots',
+        title: 'Parrot RPG - Nest',
         description: 'You currently have the parrots below in your parrot nest',
         author: {
           name: bot.user.username,
@@ -45,5 +45,5 @@ function handler (bot, msg, args) {
 }
 
 module.exports = function (moduleHolder) {
-  moduleHolder['parrots'] = handler
+  moduleHolder['nest'] = handler
 }

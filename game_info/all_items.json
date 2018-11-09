@@ -47,35 +47,41 @@
 	},
 	"buffs": {
 		"attack-buff": {
-			"name": "Attack Buff Seed",
-			"description": "Puts your parrot into a drug induced rage.",
+			"name": "Attack Buff Powder",
+			"description": "Puts your parrot into a drug induced rage. Make sure to check him for nose bleeds",
 			"price": "30",
 			"emoji": ""
 
 		},
-		"defense buff": {
-			"name": "Defense Buff Seed",
+		"defense-buff": {
+			"name": "Defense Buff Powder",
 			"description": "Literally just edbile steroids.",
 			"price": "30",
 			"emoji": ""
 		},
 		"large-attack-buff": {
-			"name": "Large Attack Buff Seed",
-			"description": "Give your parrot this seed if you want him to literally eat Amin.",
+			"name": "Large Attack Buff Powder",
+			"description": "Give your parrot this stuff if you want him to literally eat Amin.",
 			"price": "60",
 			"emoji": ""
 		},
 		"large-defence-buff": {
-			"name": "Large Defence Buff Seed",
-			"description": "Turns your parrot into Dwayne The Rock Johnson.",
+			"name": "Large Defence Buff Powder",
+			"description": "Turns your parrot into Dwayne The Rock Johnson. For a couple turns.",
 			"price": "60",
 			"emoji": ""
 		}
 	},
 	"easter-eggs": {
-		"mysterious-seed": {
-			"name": "Mysterious Seed",
-			"description": "Mysteriosuly Mysterious...",
+		"mysterious-egg": {
+			"name": "Mysterious Egg",
+			"description": "Mysteriosuly Mysterious... As well as gold and shiny!",
+			"price": "",
+			"emoji": ""
+		},
+		"mysterious-feather": {
+			"name": "Mysterious Feather",
+			"description": "Mysteriously Mysterious with a hint of mystery... As well as color changing and soft!",
 			"price": "",
 			"emoji": ""
 		}
