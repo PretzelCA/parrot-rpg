@@ -7,7 +7,7 @@ function handler (bot, msg, args) {
     bot.createMessage(msg.channel.id, {
       embed: {
         title: 'Parrot RPG - Inventory',
-        description: msg.author.username+', currently you have the items below in your inventory',
+        description: msg.author.username + ', currently you have the items below in your inventory',
         author: {
           name: bot.user.username,
           icon_url: bot.user.avatarURL

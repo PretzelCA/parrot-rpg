@@ -1,6 +1,6 @@
 const packageJSON = require('../package.json')
 const config = require('../config.json')
-const shopItems = require('../game_info/all_items.json')
+// const shopItems = require('../game_info/all_items.json')
 function handler (bot, msg, args) {
   if (args === 'view') {
     bot.createMessage(msg.channel.id, {

@@ -15,13 +15,13 @@ var commands = []
 function LoadModules (path) {
   fs.lstat(path, function (err, stat) {
     if (err) {
-      return logger.loggerCustom(err, "err")
+      return logger.loggerCustom(err, 'err')
     }
     if (stat.isDirectory()) {
       // we have a directory: do a tree walk
       fs.readdir(path, function (err, files) {
         if (err) {
-          return logger.loggerCustom(err, "err")
+          return logger.loggerCustom(err, 'err')
         }
         var f = files.length
         var l = files.length
@@ -39,9 +39,8 @@ function LoadModules (path) {
       // we have a file: load it
       try {
         require(path)(moduleHolder)
-      }
-      catch(err) {
-        logger.loggerCustom(err, "err")
+      } catch (err) {
+        logger.loggerCustom(err, 'err')
       }
     }
   })
@@ -77,17 +76,16 @@ bot.on('messageCreate', (msg) => {
       try {
         moduleHolder[actualCommand[0]](bot, msg, args)
       } catch (err) {
-        logger.loggerCustom(err, "err")
+        logger.loggerCustom(err, 'err')
       }
     }
   }
 })
 
 bot.connect()
-logger.loggerCustom('Welcome to Parrot RPG, Version ' + rpgVersion, "f")
+logger.loggerCustom('Welcome to Parrot RPG, Version ' + rpgVersion, 'f')
 try {
-  bot.editStatus("Use "+prefix+"commands for commands.")
-} 
-catch(err) {
-  logger.loggerCustom(err, "f")
+  bot.editStatus('Use ' + prefix + 'commands for commands.')
+} catch (err) {
+  logger.loggerCustom(err, 'f')
 }
